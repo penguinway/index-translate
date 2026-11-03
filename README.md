@@ -83,6 +83,14 @@ sudo ./target/release/index-translate install-service --system
 
 > Base URL 末尾不要有空格或换行。带空格时请求会变成 `/v1%20/chat/completions`，返回 `404`。
 
+如果选择的是 **Open Responses** 协议（不是“OpenAI 兼容”），URL 必须填写完整端点：
+
+```text
+http://127.0.0.1:18080/v1/responses
+```
+
+填成 `http://127.0.0.1:18080/v1` 会 POST 到只接受 GET 的 `/v1`，返回 `405 Method Not Allowed`。
+
 ## 服务管理
 
 用户服务：
