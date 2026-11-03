@@ -3,6 +3,7 @@ name = "index-translate"
 version = "0.1.0"
 edition = "2021"
 rust-version = "1.85"
+license = "MIT"
 description = "OpenAI-compatible local bridge that exposes the free Index-Translate API to Immersive Translate"
 
 [[bin]]
